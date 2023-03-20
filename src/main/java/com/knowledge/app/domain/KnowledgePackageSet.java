@@ -1,5 +1,7 @@
 package com.knowledge.app.domain;
 
+import java.util.Objects;
+
 public class KnowledgePackageSet {
 
     private int id;
@@ -7,7 +9,11 @@ public class KnowledgePackageSet {
 
     public KnowledgePackageSet(int id, String title) {
         this.id = id;
-        this.title = title;
+        this.title = Objects.requireNonNull(title);
+    }
+
+    public KnowledgePackageSet(){
+
     }
 
     public int getId() {

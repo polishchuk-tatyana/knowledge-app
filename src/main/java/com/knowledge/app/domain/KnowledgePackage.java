@@ -1,20 +1,30 @@
 package com.knowledge.app.domain;
 
-import java.time.Instant;
-
+import java.time.LocalDate;
+import java.util.Objects;
 
 public class KnowledgePackage {
 
     private int id;
     private String title;
     private String description;
-    private Instant creatingDate;
+    private LocalDate creatingDate;
 
-    public KnowledgePackage(int id, String title, String description, Instant creatingDate) {
+    public KnowledgePackage(int id, String title, String description, LocalDate creatingDate) {
         this.id = id;
-        this.title = title;
-        this.description = description;
-        this.creatingDate = creatingDate;
+        this.title = Objects.requireNonNull(title);
+        this.description = Objects.requireNonNull(description);
+        this.creatingDate = Objects.requireNonNull(creatingDate);
+    }
+
+    public KnowledgePackage(String title, String description, LocalDate creatingDate) {
+        this.title = Objects.requireNonNull(title);
+        this.description = Objects.requireNonNull(description);
+        this.creatingDate = Objects.requireNonNull(creatingDate);
+    }
+
+    public KnowledgePackage(){
+
     }
 
     public int getId() {
@@ -41,11 +51,12 @@ public class KnowledgePackage {
         this.description = description;
     }
 
-    public Instant getCreatingDate() {
+    public LocalDate getCreatingDate() {
         return creatingDate;
     }
 
-    public void setCreatingDate(Instant creatingDate) {
+    public void setCreatingDate(LocalDate creatingDate) {
         this.creatingDate = creatingDate;
     }
+
 }
