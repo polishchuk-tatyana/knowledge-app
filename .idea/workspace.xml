@@ -10,28 +10,381 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a63ec64d-a9d3-4591-9f4e-9bd6bf940718" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/KnowledgeApplicationInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/knowledge/app/config/SpringConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/knowledge/app/config/SpringMVCDispatcherServletInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/knowledge/app/domain/KnowledgePackage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/knowledge/app/domain/KnowledgePackageSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/knowledge/app/repository/KnowledgePackageRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/knowledge/app/repository/KnowledgePackageSetRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/knowledge/app/service/KnowledgePackageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/knowledge/app/service/KnowledgePackageSetService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/knowledge/app/web/rest/KnowledgePackageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/knowledge/app/web/rest/KnowledgePackageSetController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package-set.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package-sets.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-packages.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/knowledge/app/config/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/knowledge/app/config/DatabaseConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/knowledge/app/config/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/knowledge/app/repository/KPacSetAttachmentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/knowledge/app/web/dto/CustomMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/knowledge/app/web/dto/FormDataKnowledgePackageDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package-set/knowledge-package-set-form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/knowledge-package-form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/fonts/roboto-bold-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/fonts/roboto-bold-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/fonts/roboto-medium-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/fonts/roboto-medium-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/fonts/roboto-regular-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/fonts/roboto-regular-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/suite.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/suite.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/suite.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-all/sources/entry.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-all/sources/entry_pro.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-calendar/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-calendar/sources/Calendar.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-calendar/sources/helper.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-calendar/sources/types.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/AxisCreator.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/Chart.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/ComposeLayer.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/Export.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/Filters.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/Legend.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/ProChart.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/Tooltip.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/helpers/circle.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/helpers/common.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/helpers/spline.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/scales/RadialScale.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/scales/Scale.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/scales/SvgScales.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/scales/TextScale.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/scales/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/series/Area.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/series/Bar.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/series/BarX.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/series/BaseSeria.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/series/CalendarHeatMap.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/series/Donut.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/series/Line.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/series/NoScaleSeria.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/series/Pie.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/series/Pie3D.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/series/Radar.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/series/ScaleSeria.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/series/Scatter.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/series/Spline.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/series/SplineArea.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/series/Stacker.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/series/TreeMap.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/series/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/shapes/legend.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/shapes/line.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-chart/sources/types.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-colorpicker/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-colorpicker/sources/Colorpicker.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-colorpicker/sources/colors.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-colorpicker/sources/helpers/calculations.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-colorpicker/sources/helpers/color.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-colorpicker/sources/locales/en.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-colorpicker/sources/picker.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-colorpicker/sources/types.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-combobox/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-combobox/sources/Combobox.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-combobox/sources/ProCombobox.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-combobox/sources/helper.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-combobox/sources/keyListener.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-combobox/sources/locales/en.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-combobox/sources/types.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-common/CssManager.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-common/FocusManager.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-common/KeyManager.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-common/ScrollView.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-common/core.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-common/date.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-common/dom.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-common/events.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-common/html.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-common/keycodes.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-common/polyfills/array.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-common/polyfills/element.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-common/polyfills/math.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-common/polyfills/object.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-common/polyfills/string.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-common/types.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-common/view.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-data/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-data/sources/CollectionStore.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-data/sources/DragManager.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-data/sources/ajax.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-data/sources/datacollection.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-data/sources/datacollection/loader.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-data/sources/datacollection/sort.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-data/sources/dataproxy.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-data/sources/drivers/CsvDriver.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-data/sources/drivers/JsonDriver.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-data/sources/drivers/XMLDriver.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-data/sources/drivers/drivers.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-data/sources/helpers.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-data/sources/lazydataproxy.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-data/sources/selection.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-data/sources/serializers/xml.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-data/sources/treecollection.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-data/sources/types.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-dataview/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-dataview/sources/DataView.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-dataview/sources/ProDataView.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-dataview/sources/editors/InputEditor.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-dataview/sources/editors/editors.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-dataview/sources/types.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-form/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-form/sources/Form.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-form/sources/ProForm.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-form/sources/elements/button.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-form/sources/elements/checkbox.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-form/sources/elements/checkboxGroup.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-form/sources/elements/colorpicker.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-form/sources/elements/combo.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-form/sources/elements/container.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-form/sources/elements/dateinput.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-form/sources/elements/helper/label.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-form/sources/elements/input.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-form/sources/elements/radioGroup.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-form/sources/elements/radiobutton.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-form/sources/elements/select.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-form/sources/elements/simplevault.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-form/sources/elements/sliderform.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-form/sources/elements/spacer.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-form/sources/elements/textarea.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-form/sources/elements/textinput.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-form/sources/elements/timeinput.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-form/sources/helper.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-form/sources/locales/en.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-form/sources/types.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-grid/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-grid/sources/Exporter.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-grid/sources/Grid.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-grid/sources/ProGrid.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-grid/sources/Selection.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-grid/sources/columnsResizer.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-grid/sources/helpers/cells.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-grid/sources/helpers/data.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-grid/sources/helpers/keys.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-grid/sources/helpers/main.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-grid/sources/types.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-grid/sources/ui/Cells.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-grid/sources/ui/FixedCols.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-grid/sources/ui/FixedRows.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-grid/sources/ui/content.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-grid/sources/ui/content/ComboFilter.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-grid/sources/ui/content/InputFilter.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-grid/sources/ui/content/SelectFilter.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-grid/sources/ui/editors/CheckboxEditor.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-grid/sources/ui/editors/ComboboxEditor.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-grid/sources/ui/editors/DateEditor.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-grid/sources/ui/editors/InputEditor.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-grid/sources/ui/editors/SelectEditor.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-grid/sources/ui/editors/TextAreaEditor.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-grid/sources/ui/editors/editors.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-grid/sources/ui/render.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-layout/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-layout/sources/Cell.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-layout/sources/Layout.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-layout/sources/ProCell.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-layout/sources/ProLayout.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-layout/sources/helpers.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-layout/sources/types.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-list/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-list/sources/List.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-list/sources/ProList.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-list/sources/Selection.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-list/sources/editors/InputEditor.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-list/sources/editors/editors.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-list/sources/types.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-menu/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-menu/sources/ContextMenu.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-menu/sources/Menu.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-message/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-message/sources/alert.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-message/sources/common.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-message/sources/confirm.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-message/sources/locales/en.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-message/sources/message.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-message/sources/tooltip.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-message/sources/types.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-navbar/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-navbar/sources/Navbar.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-navbar/sources/elements/button.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-navbar/sources/elements/customHTMLButton.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-navbar/sources/elements/datePicker.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-navbar/sources/elements/helpers.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-navbar/sources/elements/imageButton.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-navbar/sources/elements/input.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-navbar/sources/elements/menuItem.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-navbar/sources/elements/navItem.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-navbar/sources/elements/separator.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-navbar/sources/elements/spacer.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-navbar/sources/elements/title.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-navbar/sources/itemfactory.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-navbar/sources/types.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-pagination/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-pagination/sources/Pagination.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-pagination/sources/types.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-popup/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-popup/sources/Popup.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-popup/sources/types.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-ribbon/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-ribbon/sources/ProRibbon.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-ribbon/sources/Ribbon.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-sidebar/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-sidebar/sources/ProSidebar.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-sidebar/sources/Sidebar.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-sidebar/sources/types.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-slider/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-slider/sources/Slider.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-slider/sources/types.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-tabbar/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-tabbar/sources/Tabbar.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-tabbar/sources/types.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-timepicker/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-timepicker/sources/Timepicker.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-timepicker/sources/helper.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-timepicker/sources/locales/en.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-timepicker/sources/types.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-toolbar/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-toolbar/sources/ProToolbar.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-toolbar/sources/Toolbar.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-tree/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-tree/sources/Editor.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-tree/sources/Tree.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-tree/sources/types.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-treegrid/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-treegrid/sources/TreeGrid.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-treegrid/sources/TreeGridCollection.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-treegrid/sources/types.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-vault/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-vault/sources/ProgressBar.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-vault/sources/ReadStackPreview.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-vault/sources/Uploader.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-vault/sources/Vault.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-vault/sources/configs.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-vault/sources/helper.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-vault/sources/locales/en.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-vault/sources/types.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-window/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-window/sources/ProWindow.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-window/sources/Window.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-window/sources/WindowController.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-window/sources/helpers.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/codebase/types/ts-window/sources/types.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/calendar/calendar_with_date_range.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/calendar/calendar_with_timepicker.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/chart/area_chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/chart/bar_chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/chart/calendar_heat_map_chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/chart/donut_chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/chart/pie_chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/chart/radar_chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/chart/scatter_chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/chart/treemap_chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/colorpicker/basic_colorpicker.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/colorpicker/custom_pallete_and_custom_colors.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/combobox/combobox_with_initial_value.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/combobox/combobox_with_items_count.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/combobox/common/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/common/cover.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/common/favicon/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/common/favicon/icon-144.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/common/favicon/icon-16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/common/favicon/icon-32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/common/favicon/icon-48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/common/favicon/icon-96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/common/fonts/fonts-woff.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/common/fonts/fonts-woff2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/common/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/data/data_filter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/data/data_update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/dataview/common/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/dataview/draggable_dataview_with_template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/dataview/editable_dataview_with_simple_configuration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/form/all_form_controls.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/form/common/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/form/form_validation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/grid/common/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/grid/grid_initialization.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/grid/grid_with_rich_configuration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/helpers/base_icons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/helpers/common/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/helpers/common/dhxicons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/helpers/common/dhxicons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/helpers/common/dhxicons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/helpers/resizehandler.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/layout/collapsable_and_resizable_layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/layout/layout_types.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/list/common/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/list/editable_list_with_simple_configuration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/list/list_with_drag_n_drop.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/menu/common/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/menu/common/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/menu/context_menu_initialization.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/menu/menu_initialization.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/message/alert.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/message/confirm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/message/message.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/message/tooltip.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/pagination/pagination_align.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/pagination/pagination_with_grid.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/popup/popup_auto_positioning.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/popup/popup_with_custom_css.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/ribbon/common/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/ribbon/common/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/ribbon/ribbon_get_state.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/ribbon/ribbon_initialization.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/sidebar/common/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/sidebar/common/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/sidebar/disable_all_or_several_items.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/sidebar/toggled_sidebar_and_custom_html.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/slider/slider_range_mode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/slider/slider_with_a_scale.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/tabbar/tabbar_rich_configuration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/tabbar/tabbar_tab_align.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/theme/base_theme.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/theme/common/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/theme/custom_theme.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/theme/theme_configurator.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/timepicker/timepicker_with_current_time_and_button.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/timepicker/twelve_hour_format_in_timepicker.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/toolbar/common/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/toolbar/common/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/toolbar/toolbar_initialization.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/toolbar/toolbar_two_state_button_and_tooltips.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/tree/common/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/tree/with_custom_template_and_event_handlers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/tree/with_editing_drag_and_drop_and_checkboxes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/treegrid/common/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/treegrid/treegrid_initialization.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/treegrid/treegrid_with_rich_configuration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/window/window_closable_and_movable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/samples/window/window_two_windows.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/dhtmlx/suite_trial/whatsnew.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts/jsfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/KnowledgeApplicationInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KnowledgeApplicationInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/knowledge/app/config/SpringMVCDispatcherServletInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knowledge/app/config/SpringMVCDispatcherServletInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/knowledge/app/domain/KnowledgePackage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knowledge/app/domain/KnowledgePackage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/knowledge/app/domain/KnowledgePackageSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knowledge/app/domain/KnowledgePackageSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/knowledge/app/repository/KnowledgePackageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knowledge/app/repository/KnowledgePackageRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/knowledge/app/repository/KnowledgePackageSetRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knowledge/app/repository/KnowledgePackageSetRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/knowledge/app/service/KnowledgePackageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knowledge/app/service/KnowledgePackageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/knowledge/app/service/KnowledgePackageSetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knowledge/app/service/KnowledgePackageSetService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/knowledge/app/web/rest/KnowledgePackageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knowledge/app/web/rest/KnowledgePackageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/knowledge/app/web/rest/KnowledgePackageSetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knowledge/app/web/rest/KnowledgePackageSetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package-set.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package-set/knowledge-packages-of-set.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package-sets.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package-set/knowledge-package-sets.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-packages.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/knowledge-packages.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,12 +396,18 @@
       <list>
         <option value="spring-beans.schema" />
         <option value="Jsp File" />
+        <option value="AnnotationType" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/knowledge-packages.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -66,25 +425,88 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "spring.configuration.checksum": "5ed4486755b7e207adfba76e7bc45b87"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.12.1&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.15.3&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/tatia/work/knowledge-app/src/main/webapp/WEB-INF/views/knowledge-package/scripts/jsfile.js&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;5ed4486755b7e207adfba76e7bc45b87&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2022.2.4\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.knowledge.app.domain" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tatia\work\knowledge-app\src\main\webapp\WEB-INF\lib" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\work\knowledge-app\src\main\webapp\WEB-INF\templates" />
-      <recent name="D:\work\knowledge-app\src\main\webapp" />
-      <recent name="D:\work\knowledge-app\src\main\webapp\WEB-INF\templates\kpacs" />
-      <recent name="D:\work\knowledge-app\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\tatia\work\knowledge-app\src\main\webapp\WEB-INF\views\knowledge-package\scripts" />
+      <recent name="C:\Users\tatia\work\knowledge-app\src\main\webapp\WEB-INF\views\knowledge-package\scripts\dhtmlx" />
+      <recent name="C:\Users\tatia\work\knowledge-app\src\main\webapp\WEB-INF\views\knowledge-package" />
+      <recent name="C:\Users\tatia\work\knowledge-app\src\main\webapp\WEB-INF\lib" />
+      <recent name="C:\Users\tatia\work\knowledge-app\src\main\webapp\WEB-INF\views\knowledge-package\static" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Tomcat 9.0.72" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.72" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="18" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Consumer3">
+    <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.knowledge.app.config.Consumer" />
+      <module name="knowledge-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.knowledge.app.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Consumer1" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.knowledge.app.config.Consumer" />
+      <module name="knowledge-app" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Consumer2" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.knowledge.app.config.Consumer" />
+      <module name="knowledge-app" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Consumer3" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.knowledge.app.config.Consumer" />
+      <module name="knowledge-app" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Producer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.knowledge.app.config.Producer" />
+      <module name="knowledge-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.knowledge.app.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jsfile.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="jsfile.js" working-dir="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/knowledge-package/scripts">
+      <method v="2" />
+    </configuration>
+    <configuration name="Tomcat 9.0.72" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.72" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="openjdk-18" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="knowledge-app:war exploded">
@@ -171,6 +593,22 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Consumer2" />
+      <item itemvalue="Application.Consumer3" />
+      <item itemvalue="Application.Consumer1" />
+      <item itemvalue="Application.Consumer" />
+      <item itemvalue="Application.Producer" />
+      <item itemvalue="Node.js.jsfile.js" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.72" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Consumer" />
+        <item itemvalue="Application.Producer" />
+        <item itemvalue="Node.js.jsfile.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -184,6 +622,8 @@
       <workItem from="1677756359530" duration="1231000" />
       <workItem from="1677757606166" duration="19270000" />
       <workItem from="1677787383944" duration="13495000" />
+      <workItem from="1679237105874" duration="5092000" />
+      <workItem from="1679318726122" duration="3166000" />
     </task>
     <servers />
   </component>
